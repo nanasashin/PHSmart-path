@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Navigation</title>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="codes/css/map.css">
+</head>
+
+<body>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>   
+        <ul>
+            <li><a href="index.html"><img src="Images/phs logo.png" alt="Home"></a></li>
+            <li class="hideOnMobile"><a href="#">Map</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul> 
+    </nav>
+
+
+    <div class="search-boxes">
+        <div class="search-box">
+            <div class="row">
+                <input type="text" id="first-search-location" placeholder="First Location" autocomplete="off">
+            </div>
+
+            <div class="result-box">
+
+            </div>
+        </div>
+
+        <div class="search-box">
+            <div class="row">
+                <input id="second-search-location" type="text" name="location" placeholder="Second Location" autocomplete="off">
+            </div>
+
+            <div class="result-box-2"></div>
+        </div>
+    </div>
+
+    <div class="view-direction">
+        <div class="map">
+            <div class="direction-image">
+                <img src="map/map3.png" alt="map">
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+            </div>
+
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+        </div> 
+
+        <div class="direction-text">
+        </div>
+    </div>
+    
+
+    <div class="button-div">
+        <button class="navigation-button" onclick="startNavigating()">Navigate</button>
+    </div>
+
+    <script src="codes/js/navScript.js"></script>
+    <script src="codes/js/mapScript.js"></script>
+
+</body>
+</html>

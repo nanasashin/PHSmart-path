@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-file/index.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><img src="Images/phs logo.png" alt="Home"></a></li>
+            <li class="hideOnMobile"><a href="map.html">Map</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul> 
+    </nav>
+
+    <div class="header-title">
+        <div class="title"><h1>PHSmart Path:</h1><p> A Smart Campus Navigation System</p></div>
+        <div class="description"><p>Experience a seamless campus journey with PHSmart Path—your trusted guide to navigating Pampanga High School with ease.</p></div>
+    </div>
+    
+    <div class="button-div">
+        <button class="navigation-button" onclick="document.location='map.html'">Click to Navigate</button>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

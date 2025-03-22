@@ -1,0 +1,180 @@
+#map-image {
+    display: none;
+}
+
+.direction-image {
+    border: 2px solid #d4d4d4;
+    width: 100%;   
+    height: 300px;
+    overflow: scroll;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.search-boxes {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    width: 400px;
+    background-color: white;
+    margin: 5px auto 0;
+    border-radius: 5px;
+}
+
+.row {
+    align-items: center;
+    padding: 10px 20px;
+}
+
+input {
+    width: 100%;
+    height: 20px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+}
+
+.result-box ul {
+    border-top: 1px solid #999;
+    padding: 10px 10px;
+}
+
+.result-box ul li {
+    list-style: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.result-box ul li:hover {
+    background-color: #e9f3ff;
+}
+
+.result-box {
+    z-index: 900;
+    max-height: 300px;
+    overflow-y: scroll
+}
+
+.result-box-2 ul {
+    border-top: 1px solid #999;
+    padding: 10px 10px;
+}
+
+.result-box-2 ul li {
+    list-style: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.result-box-2 ul li:hover {
+    background-color: #e9f3ff;
+}
+
+.result-box-2 {
+    z-index: 900;
+    max-height: 300px;
+    overflow-y: scroll
+}
+
+.navigation-button {
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fdb74f;
+    border: none;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 10;
+}
+
+.view-direction {
+    display: none;
+    position: relative;
+}
+
+.view-direction img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px ;
+}
+
+.slider {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    background-color: hsla(0, 0%, 0%, 0.116);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.view-direction {
+    width: 700px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px ;
+}
+
+.direction-text {
+    margin-top: 30px;
+    background-color: white;
+    width: 100%;
+}
+
+@media(max-width: 810px) {
+    .view-direction {
+        width: 70%;
+    }
+}
+
+@media(max-width: 500px) {
+    .search-box {
+        width: 80%;
+    }
+}
