@@ -15,4 +15,4 @@ Need to FIX:
 - Other things I'm too lazy to fix
 
 
-PS. This is a 2nd year senior high school CAPSTONE project. Maybe I will fic it in the near future or maybe not idk.
+PS. This is a 2nd year senior high school CAPSTONE project. Maybe I will fix it in the near future or maybe not idk.
